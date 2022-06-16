@@ -13,43 +13,46 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestCase2 {
-	
+
 	WebDriver driver;
-		
+
+	@BeforeClass
+	public void launchBrowser() {
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();	
+		driver.navigate().to("https://opensource-demo.orangehrmlive.com/");
+
+	}
+
 	@Test
 	public void login() {
-	
-		WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();	
-		driver.navigate().to("https://opensource-demo.orangehrmlive.com/");  // URL is OPEN in Chrome Browser 
-	driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
-	driver.findElement(By.id("txtPassword")).sendKeys("admin123");
-	driver.findElement(By.id("btnLogin")).click();
-	Assert.assertEquals("OrangeHRM", driver.getTitle());
-		
+
+		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
+		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+		driver.findElement(By.id("btnLogin")).click();
+		Assert.assertEquals("OrangeHRM", driver.getTitle());
+
 	}
-	
+
 	@Test()
 	public void verifyText() {
-		WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();	
-		driver.navigate().to("https://opensource-demo.orangehrmlive.com/");  // URL is OPEN in Chrome Browser
+		
+		WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/form/div[5]/div/a"));
+		String str = ele.getText();
+		System.out.println(str);
+		Assert.assertEquals(str , "Forgot your password?");
 
-	WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/form/div[5]/div/a"));
-	String str = ele.getText();
-	System.out.println(str);
-	Assert.assertEquals(str , "Forgot your password?");
-		
-		
+
 	}
-	
+
 	@AfterClass
 	public void logout() {
-		
-	driver.quit();
-	
 
-	
+		driver.quit();
+
+
+
 	}	
 }
 

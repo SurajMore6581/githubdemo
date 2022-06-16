@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-17T01:22:44 IST" name="Suite" finished-at="2022-06-17T01:24:04 IST" duration-ms="80371">
+  <suite started-at="2022-06-17T01:38:23 IST" name="Suite" finished-at="2022-06-17T01:38:44 IST" duration-ms="20874">
     <groups>
     </groups>
-    <test started-at="2022-06-17T01:22:44 IST" name="Test" finished-at="2022-06-17T01:24:04 IST" duration-ms="80371">
+    <test started-at="2022-06-17T01:38:23 IST" name="Test" finished-at="2022-06-17T01:38:44 IST" duration-ms="20874">
       <class name="com.pack1.TestCase2">
-        <test-method signature="verifyText()[pri:0, instance:com.pack1.TestCase2@49139829]" started-at="2022-06-17T01:22:44 IST" name="verifyText" finished-at="2022-06-17T01:23:22 IST" duration-ms="37714" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.pack1.TestCase2@31304f14]" started-at="2022-06-17T01:38:23 IST" name="launchBrowser" finished-at="2022-06-17T01:38:39 IST" duration-ms="15292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyText()[pri:0, instance:com.pack1.TestCase2@31304f14]" started-at="2022-06-17T01:38:39 IST" name="verifyText" finished-at="2022-06-17T01:38:39 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyText -->
-        <test-method signature="login()[pri:0, instance:com.pack1.TestCase2@49139829]" started-at="2022-06-17T01:23:22 IST" name="login" finished-at="2022-06-17T01:24:02 IST" duration-ms="39661" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.pack1.TestCase2@31304f14]" started-at="2022-06-17T01:38:39 IST" name="login" finished-at="2022-06-17T01:38:43 IST" duration-ms="4511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.pack1.TestCase2@49139829]" started-at="2022-06-17T01:24:02 IST" name="logout" finished-at="2022-06-17T01:24:04 IST" duration-ms="2632" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.pack1.TestCase2@31304f14]" started-at="2022-06-17T01:38:43 IST" name="logout" finished-at="2022-06-17T01:38:44 IST" duration-ms="690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->

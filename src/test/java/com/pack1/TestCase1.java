@@ -33,7 +33,9 @@ public void testmethod1() {
 	}
 	
 	
-	driver.close();
+	driver.quit(); 
+	
+	// Quit the page
 	
 	
 	

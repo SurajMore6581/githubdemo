@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pack1.TestCase2">
+      <class name="com.pack1.TestCase3">
         <methods>
-          <include name="verifyText"/>
-          <include name="launchBrowser"/>
-          <include name="logout"/>
+          <include name="javaScriptExmplae"/>
         </methods>
-      </class> <!-- com.pack1.TestCase2 -->
+      </class> <!-- com.pack1.TestCase3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

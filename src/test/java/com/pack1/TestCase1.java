@@ -25,7 +25,7 @@ public void testmethod1() {
 	ele.click();
 	ele.sendKeys("Selemium" , Keys.ENTER);
 	
-	List<WebElement> listname = driver.findElements(By.tagName("a"));
+	List<WebElement> listname = driver.findElements(By.xpath("//div[@class='yuRUbf']/a"));
 	
 	for( WebElement element : listname) {
 		System.out.println(element.getAttribute("href"));
